@@ -1,0 +1,4 @@
+interface Entry {
+  fileName: string;
+  
+}

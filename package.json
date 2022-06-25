@@ -1,0 +1,73 @@
+{
+  "name": "@specfocus/pack-focus",
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/specfocus/pack-focus.git"
+  },
+  "description": "S3 storage utils",
+  "main": "index.js",
+  "scripts": {
+    "exjest": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "test": "yarn exjest --coverage",
+    "test:watch": "yarn exjest --watch"
+  },
+  "keywords": [
+    "csv",
+    "json",
+    "parquet",
+    "unzip",
+    "zip"
+  ],
+  "author": "Lucas M. Oromi",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.100.0",
+    "@fast-csv/format": "^4.3.5",
+    "@fast-csv/parse": "^4.3.6",
+    "bson": "^4.6.4",
+    "compress-commons": "^4.1.1",
+    "fast-csv": "^4.3.6",
+    "lodash.escaperegexp": "^4.1.2",
+    "lodash.isequal": "^4.0.0",
+    "lodash.isnil": "^4.0.0",
+    "pako": "^2.0.4",
+    "parquetjs": "^0.11.2",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "@specfocus/main-focus": "^0.0.1",
+    "@specfocus/pack-focus.json": "^0.0.1",
+    "@specfocus/spec-focus": "^0.2.0",
+    "@types/jest": "^27.5.1",
+    "@types/lodash.escaperegexp": "4.1.6",
+    "@types/lodash.groupby": "4.6.6",
+    "@types/lodash.isfunction": "3.0.6",
+    "@types/lodash.isnil": "4.0.6",
+    "@types/lodash.isundefined": "3.0.6",
+    "@types/lodash.partition": "4.6.6",
+    "@types/lodash.uniq": "4.5.6",
+    "@types/sinon": "10.0.2",
+    "babel-jest": "^28.1.0",
+    "jest": "^28.1.0",
+    "lodash.partition": "4.6.0",
+    "ts-jest": "^28.0.2",
+    "tslint": "^6.1.3",
+    "tsconfig": "*",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "husky": "^8.0.1",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "@specfocus/main-focus": "^0.0.1",
+    "@specfocus/pack-focus.json": "^0.0.1",
+    "@specfocus/spec-focus": "^0.2.0"
+  }
+}
